@@ -28,11 +28,11 @@ function App() {
     }
   }
   return (
-    <div className={`modal ${popupStyles.container}`}>
+    <div className={popupStyles.container}>
       <h1>User Details Modal</h1>
       <button onClick={handleClick} className={popupStyles.button}>Open Form</button>
       {popup === true ? (
-          <div className={popupStyles.overlay} onClick={()=>setPopup(false)}>
+          <div className={`modal ${popupStyles.overlay}`} onClick={()=>setPopup(false)}>
            {/* prevent close when clicking inside form */}
           <form className={`modal-content ${popupStyles.modalContainer}`} onClick={(e)=>e.stopPropagation()}  onSubmit={handleSubmit}>
             <h1>Fill Details</h1>
