@@ -1,0 +1,44 @@
+.container{
+   display:flex;
+   flex-direction:column;
+   align-items:center;
+}
+.button{
+   background-color:blue;
+   padding:15px 30px 15px 30px;
+   border-radius:10px;
+   border:none;
+   color:white;
+   font-weight:bold;
+   margin-bottom:70px;
+}
+.modalContainer{
+    margin-top:180px;
+    background-color:white;border:1px solid grey;
+    border-radius:10px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;width:40%;
+    padding:30px;
+    gap:5px;
+    font-weight:bolder; 
+}
+.input{
+    width:80%;
+    padding:10px;
+    margin-bottom:20px;
+    border-radius:5px;
+    border:1px solid grey;
+}
+.overlay{
+    position: fixed;
+    left:0;
+    top:0;
+    width:100vw;
+    height: 100vh;
+    background-color: rgba(128,128,128,0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
